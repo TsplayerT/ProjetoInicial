@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.use(json());
+app.get('/', (req, res) => {
+    res.send('hello world!');
+});
 
-app.get('/', () => 'hello world');
-
-app.listen(3001);
+app.listen(3002, () => {
+    console.log('listen in 3001 port');
+});

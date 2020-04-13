@@ -2,6 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const getData = () => {
+  fetch('http://localhost:3001/')
+    .then(response => {
+      return 'response'
+    })
+    .catch(error => {
+      console.log('Deu erro porra.');
+    })
+    .finally(() => {
+      return 'deu merda'
+    });
+}
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +29,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {getData()}
         </a>
       </header>
     </div>
