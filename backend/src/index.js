@@ -5,6 +5,8 @@ app.get('/', (req, res) => {
     res.send('hello world!');
 });
 
-app.listen(3002, () => {
-    console.log('listen in 3001 port');
+const port : integer = 3002;
+
+app.listen(port, () => {
+    console.log(`listen in ${port} port`);
 });
