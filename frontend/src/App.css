@@ -1,0 +1,22 @@
+.header {
+  text-align: center;
+}
+
+.custom-btn-toolbar {
+  display: inline !important;
+}
+
+.custom-btn-toolbar > .btn {
+  margin-right: 1rem;
+}
+html, div {
+  color: black;
+  background-color: black;
+}
+Button, button {
+  color: yellow;
+}
+.botao {
+  color: blue;
+  background-color: blue;
+}

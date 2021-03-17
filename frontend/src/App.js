@@ -1,6 +1,8 @@
 import React from 'react';
 import Routes from './routes';
 
-const App = () => <Routes />;
+require('./App.css');
 
-export default App;
+export default function App() {
+    return(<Routes />);
+}
